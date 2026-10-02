@@ -21,8 +21,9 @@
 
 ## 📺 Showcase & Resources
 
-* 🎥 **Showcase Video:** TBD 
-* ☁️ **Run it in the cloud:** [ComfyCloud](https://cloud.comfy.org/?via=ph01) (affiliate link, i may earn a commission)
+* 🎥 **Showcase Video:** [YouTube](https://youtu.be/946yTMjz-go) 
+* ☁️ **Run STAGE 1 in the cloud:**[STAGE 1 on ComfyCloud](https://cloud.comfy.org/?share=a90f9f396398&via=ph01)
+* ☁️ **Run it in the cloud:**[STAGE 3 on ComfyCloud](https://cloud.comfy.org/?share=02898c159ba2&via=ph01) (affiliate links, i may earn a commission)
 * 💬 **Discord:** [PH's AIxArchviz Discord](https://discord.gg/3UW5ZaWpWq)
 * 🌐 **Web:** [https://www.paulhansen.de](https://www.paulhansen.de)
 * 📸 **Instagram:** [https://www.instagram.com/paulhansen.design/](https://www.instagram.com/paulhansen.design/)
