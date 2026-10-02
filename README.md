@@ -199,9 +199,8 @@ The workflows were saved with a recent ComfyUI frontend (1.53.x), which supports
 📂 AIxArchviz_FLUX2xLTX25/
 ├── 📂 workflows/            → the four ComfyUI workflows (.json)
 └── 📂 assets/
-     ├── 📂 inputs/           → example guidance images + prompts (cabin, pavillon, twist, warroom)
-     ├── 📂 driving_animation/ → camera driving videos for Img2Video
-     └── 📂 howto/            → reference images
+     ├── 📂 inputs/           → example guidance images, prompts & reference images (cabin, pavillon, twist, warroom)
+     └── 📂 driving_animation/ → camera driving videos for Img2Video
 ```
 
 ---
