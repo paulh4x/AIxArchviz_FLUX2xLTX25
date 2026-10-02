@@ -21,7 +21,7 @@
 
 ## 📺 Showcase & Resources
 
-* 🎥 **Showcase Video:** [https://youtu.be/6aXJqRhjXo0](https://youtu.be/6aXJqRhjXo0)
+* 🎥 **Showcase Video:** TBD 
 * ☁️ **Run it in the cloud:** [ComfyCloud](https://cloud.comfy.org/?via=ph01) (affiliate link, i may earn a commission)
 * 💬 **Discord:** [PH's AIxArchviz Discord](https://discord.gg/3UW5ZaWpWq)
 * 🌐 **Web:** [https://www.paulhansen.de](https://www.paulhansen.de)
