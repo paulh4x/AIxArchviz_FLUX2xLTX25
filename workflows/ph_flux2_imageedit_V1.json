@@ -1,8 +1,8 @@
 {
-  "id": "eac58841-8a53-4819-a723-0ed2d27b6f6f",
+  "id": "23bfacd6-2993-4bdf-a4b6-4094d8810935",
   "revision": 0,
-  "last_node_id": 780,
-  "last_link_id": 1473,
+  "last_node_id": 783,
+  "last_link_id": 1482,
   "nodes": [
     {
       "id": 250,
@@ -349,7 +349,7 @@
       },
       "widgets_values": [
         "change the buildings black facade in image 1 to the pale copper material from reference image 2 and add subtle reflections of the environment to it",
-        914408079900561,
+        431497707778327,
         "phflg",
         "ph_f2k9b_localforestlab_v1.safetensors",
         true,
@@ -376,7 +376,7 @@
       ],
       "widgets_values_named": {
         "value": "change the buildings black facade in image 1 to the pale copper material from reference image 2 and add subtle reflections of the environment to it",
-        "seed": 914408079900561,
+        "seed": 431497707778327,
         "value_1": "phflg",
         "lora_name": "ph_f2k9b_localforestlab_v1.safetensors",
         "value_2": true,
@@ -850,8 +850,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 0,
-          "lastNodeId": 780,
-          "lastLinkId": 1473,
+          "lastNodeId": 783,
+          "lastLinkId": 1482,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4050,11 +4050,11 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              173485001763991,
+              992727599109202,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 173485001763991,
+              "noise_seed": 992727599109202,
               "control_after_generate": "randomize"
             }
           },
@@ -7059,7 +7059,7 @@
                 "widget": {
                   "name": "resize_type.longer_size"
                 },
-                "link": 1473
+                "link": 1482
               }
             ],
             "outputs": [
@@ -7161,7 +7161,7 @@
                 "widget": {
                   "name": "resize_type.longer_size"
                 },
-                "link": 1472
+                "link": 1481
               }
             ],
             "outputs": [
@@ -7610,8 +7610,10 @@
                 "name": "INT",
                 "type": "INT",
                 "links": [
-                  1472,
-                  1473
+                  1476,
+                  1480,
+                  1481,
+                  1482
                 ]
               },
               {
@@ -8951,6 +8953,86 @@
             ],
             "widgets_values_named": {
               "switch": false
+            }
+          },
+          {
+            "id": 781,
+            "type": "PreviewAny",
+            "pos": [
+              210.30383698728923,
+              1854.6355805516787
+            ],
+            "size": [
+              210,
+              122
+            ],
+            "flags": {},
+            "order": 132,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 1476
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 783,
+            "type": "ComfyNumberConvert",
+            "pos": [
+              580.4122324260536,
+              1825.3785487142595
+            ],
+            "size": [
+              149.4458984375,
+              46
+            ],
+            "flags": {},
+            "order": 133,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "value",
+                "name": "value",
+                "type": "INT,FLOAT,STRING,BOOLEAN",
+                "link": 1480
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "FLOAT",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "localized_name": "INT",
+                "name": "INT",
+                "type": "INT",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyNumberConvert"
             }
           }
         ],
@@ -10685,12 +10767,44 @@
             "type": "BOOLEAN"
           },
           {
+            "id": 1476,
+            "origin_id": 505,
+            "origin_slot": 1,
+            "target_id": 781,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 1480,
+            "origin_id": 505,
+            "origin_slot": 1,
+            "target_id": 783,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
             "id": 712,
             "origin_id": 362,
             "origin_slot": 0,
             "target_id": 236,
             "target_slot": 0,
             "type": "MASK"
+          },
+          {
+            "id": 317,
+            "origin_id": 235,
+            "origin_slot": 0,
+            "target_id": 236,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 318,
+            "origin_id": 235,
+            "origin_slot": 1,
+            "target_id": 236,
+            "target_slot": 2,
+            "type": "INT"
           },
           {
             "id": 1024,
@@ -10701,12 +10815,28 @@
             "type": "IMAGE"
           },
           {
+            "id": 1482,
+            "origin_id": 505,
+            "origin_slot": 1,
+            "target_id": 495,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
             "id": 1028,
             "origin_id": 498,
             "origin_slot": 0,
             "target_id": 497,
             "target_slot": 0,
             "type": "MASK"
+          },
+          {
+            "id": 1481,
+            "origin_id": 505,
+            "origin_slot": 1,
+            "target_id": 497,
+            "target_slot": 1,
+            "type": "INT"
           },
           {
             "id": 1034,
@@ -10741,18 +10871,18 @@
             "type": "MASK"
           },
           {
-            "id": 317,
-            "origin_id": 235,
+            "id": 1427,
+            "origin_id": 770,
             "origin_slot": 0,
-            "target_id": 236,
+            "target_id": 776,
             "target_slot": 1,
             "type": "INT"
           },
           {
-            "id": 318,
-            "origin_id": 235,
+            "id": 1428,
+            "origin_id": 770,
             "origin_slot": 1,
-            "target_id": 236,
+            "target_id": 776,
             "target_slot": 2,
             "type": "INT"
           },
@@ -10827,38 +10957,6 @@
             "target_id": 499,
             "target_slot": 5,
             "type": "STRING"
-          },
-          {
-            "id": 1427,
-            "origin_id": 770,
-            "origin_slot": 0,
-            "target_id": 776,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1428,
-            "origin_id": 770,
-            "origin_slot": 1,
-            "target_id": 776,
-            "target_slot": 2,
-            "type": "INT"
-          },
-          {
-            "id": 1472,
-            "origin_id": 505,
-            "origin_slot": 1,
-            "target_id": 497,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1473,
-            "origin_id": 505,
-            "origin_slot": 1,
-            "target_id": 495,
-            "target_slot": 1,
-            "type": "INT"
           }
         ],
         "extra": {}
@@ -10867,7 +10965,7 @@
   },
   "config": {},
   "extra": {
-    "frontendVersion": "1.53.6",
+    "frontendVersion": "1.55.14",
     "workflowRendererVersion": "LG",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
@@ -10878,10 +10976,10 @@
       "favorites": []
     },
     "ds": {
-      "scale": 0.5431064180732386,
+      "scale": 0.6577257785886005,
       "offset": [
-        2983.8413600308104,
-        -2943.9485816625847
+        2742.8761920683246,
+        -3506.4219093176825
       ]
     }
   },
