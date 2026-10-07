@@ -1,8 +1,8 @@
 {
-  "id": "f6d1866c-4b64-45a4-be9c-4b9c45da1563",
+  "id": "eac58841-8a53-4819-a723-0ed2d27b6f6f",
   "revision": 0,
   "last_node_id": 780,
-  "last_link_id": 1467,
+  "last_link_id": 1471,
   "nodes": [
     {
       "id": 250,
@@ -348,8 +348,8 @@
         ]
       },
       "widgets_values": [
-        "change the buildings black facade in image 1 to the material from reference image 2",
-        973776922709717,
+        "change the buildings black facade in image 1 to the pale copper material from reference image 2 and add subtle reflections of the environment to it",
+        855547306645682,
         "phflg",
         "ph_f2k9b_localforestlab_v1.safetensors",
         true,
@@ -369,14 +369,14 @@
         504,
         0,
         true,
-        false,
+        true,
         5,
         false,
-        false
+        true
       ],
       "widgets_values_named": {
-        "value": "change the buildings black facade in image 1 to the material from reference image 2",
-        "seed": 973776922709717,
+        "value": "change the buildings black facade in image 1 to the pale copper material from reference image 2 and add subtle reflections of the environment to it",
+        "seed": 855547306645682,
         "value_1": "phflg",
         "lora_name": "ph_f2k9b_localforestlab_v1.safetensors",
         "value_2": true,
@@ -396,10 +396,10 @@
         "right": 504,
         "bottom": 0,
         "switch": true,
-        "switch_1": false,
+        "switch_1": true,
         "value_14": 5,
         "switch_2": false,
-        "switch_3": false
+        "switch_3": true
       },
       "color": "#222",
       "bgcolor": "#000"
@@ -743,10 +743,10 @@
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "# PH's AIxArchviz FLUX2.k9b Series: IMAGE EDIT\n\n*A multipurpose workflow that lets you edit images without pixel degradation.*\n\nShowcase: [Youtube Video Walkthrough](https://youtu.be/6aXJqRhjXo0)\n___\n## Support, feedback, suggestions and improvements highly appreciated ❤️\n- comfycloud: [ComfyCloud](https://cloud.comfy.org/?via=ph01) (affiliate link, i may earn a commission)\n- Web: [paulhansen.de](https://www.paulhansen.de)\n- Instagram: [paulhansen.design](https://www.instagram.com/paulhansen.design/)\n- LinkedIn: [Paul Hansen](https://www.linkedin.com/in/ph3d)\n- Discord: [PH's AIxArchviz Discord](https://discord.gg/3UW5ZaWpWq)\n- Ko-Fi: [ko-fi/paulhansen](https://www.ko-fi.com/paulhansen)\n\n___\n## HOW TO USE THIS WORKFLOW\nMake sure all models used in this workflow are available on your device (including correct folder placement). Load any image in the LOAD IMAGE (image 1) node as a starting point for your edits, load any REFERENCE IMAGE (image 2) for using its content during editing. Refer to the images in your prompt, e.g. \"add the flamingo from image 2 to stand on the summer meadow in image 1 bright sunlight\". Either use an RGB IMAGE, the Mask Editor or a prompt in \"AUTOMASK BY PROMPT\" to create your mask for the editing. For smoother results increase SOFTEN MASK value. **Note that SEPARATE MASK COMPONENTS works best with values below 5 for the SOFTEN MASK feature.** Use Auto-enhance, -remove or -outpaint according to your needs.\n___\n### Custom Nodes (all available on comfycloud):\n\n- [ComfyUI-KJNodes by Kijai](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI_essentials by Matteo](https://github.com/cubiq/ComfyUI_essentials)\n- [masquerade nodes by BadCafeCode](https://github.com/BadCafeCode/masquerade-nodes-comfyui)\n- [LanPaint by scraed](https://github.com/scraed/LanPaint)\n- [Inpaint Crop & Stitch by lquesada](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch)\n\n*For installation, use the ComfyUI-Manager or find the terminal commands in the respective repository, e.g. `git clone https://github.com/kijai/ComfyUI-KJNodes` executed in `<YOUR_PATH_TO_COMFYUI>/ComfyUI/custom_nodes/`*\n\n### Model Downloads for Local Inference\n\n**checkpoints**\n- [sam3.1_multiplex_fp16.safetensors](https://huggingface.co/Comfy-Org/sam3.1/resolve/main/checkpoints/sam3.1_multiplex_fp16.safetensors)\n\n**diffusion_models**\n- [flux-2-klein-9b.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B/resolve/main/flux-2-klein-9b.safetensors) *(gated)*\n\n**text_encoders**\n- [qwen_3_8b_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors)\n\n**loras**\n- [ph_f2k9b_localforestlab_v1.safetensors](https://huggingface.co/paulhax/flux2-klein-9b-localforestlab/resolve/main/ph_f2k9b_localforestlab_v1.safetensors)\n  *PH's custom FLUX.2 [klein] 9B LoRA for detailed trees & foliage (cc-by-nc 4.0)*\n\n**vae**\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors)\n\n**upscale_models**\n- [RealESRGAN_x2.pth](https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth)\n\n*Models marked **gated** require you to log in and accept the license on the respective huggingface repository before downloading.*\n\nModel Storage Location\n```\n📂 ComfyUI/\n└── 📂 models/\n     ├── 📂 checkpoints/\n     │    └── sam3.1_multiplex_fp16.safetensors\n     ├── 📂 diffusion_models/\n     │    └── flux-2-klein-9b.safetensors\n     ├── 📂 text_encoders/\n     │    └── qwen_3_8b_fp8mixed.safetensors\n     ├── 📂 loras/\n     │    └── ph_f2k9b_localforestlab_v1.safetensors\n     ├── 📂 vae/\n     │    └── flux2-vae.safetensors\n     └── 📂 upscale_models/\n          └── RealESRGAN_x2.pth\n```"
+        "# PH's AIxArchviz FLUX2.k9b Series: IMAGE EDIT\n\n*A multipurpose Workflow that lets you edit images without pixel degradation.*\n\nShowcase: \t[Youtube Video Walkthrough](https://youtu.be/6aXJqRhjXo0)\n___\n## Support, feedback, suggestions and improvements highly appreciated  ❤️\n- comfycloud: [ComfyCloud](https://cloud.comfy.org/?via=ph01) (affiliate link, i may earn a commission)\n- Web: [paulhansen.de](https://www.paulhansen.de)\n- Instagram: [paulhansen.design](https://www.instagram.com/paulhansen.design/)\n- LinkedIn: [Paul Hansen](https://www.linked.com/in/ph3d)\n- Discord: [PH's AIxArchviz Discord](https://discord.gg/3UW5ZaWpWq)\n- Ko-Fi: [ko-fi/paulhansen](https://www.ko-fi.com/paulhansen)\n\n___\n## HOW TO USE THIS WORKFLOW\nMake sure all models used in this workflow are available on your device (including correct folder placement). Load any image in the LOAD IMAGE (image 1) node as a starting point for your edits, load any REFERENCE IMAGE (image 2) for using its content during editing. Reffer to the images in your prompt, e.g. \"add the flamingo from image 2 to stand on the summer meadow in image 1 bright sunlight\". Either use an RGB IMAGE, Maske Editor or a Prompt in \"AUTOMASK BY PROMPT\" to create your mask for the editing. For smoother results increase SOFTEN MASK value. **Note that SEPERATE MASK COMPONENTS works best with values below 5 for SOFTEN MASK feature.** Use Auto-enhance, -remove or -outpaint according to your needs. \n___\n### Custom Nodes:\n\n- [ComfyUI-KJNodes by Kijai](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI_essentials by Matteo](https://github.com/cubiq/ComfyUI_essentials)\n- [masquerade modes by BadCafeCode](https://github.com/BadCafeCode/masquerade-nodes-comfyui)\n- [LanPaint by scraed](https://github.com/scraed/LanPaint)\n- [Inpaint Crop & Stitch by lquesada](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch)\n\n*For installation, use the ComfyUI-Manager or find the terminal commands in the respective repository.*\n<br>\nEXAMPLE:\n`git clone https://github.com/scraed/LanPaint` executed in `<YOUR_PATH_TO_COMFYUI>/ComfyUI/custom_nodes/` \n\n### Model Downloads for Local Inference\n\n**checkpoints**\n- [sam3.1_multiplex_fp16.safetensors](https://huggingface.co/Comfy-Org/sam3.1/blob/main/checkpoints/sam3.1_multiplex_fp16.safetensors)\n\n**diffusion_models**\n- [flux-2-klein-9b.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B/blob/main/flux-2-klein-9b.safetensors) *NOTE: this is a **Gated** model, accept TOS on the huggingface repo to access!*\n\n**text_encoders**\n- [qwen_3_8b.safetensors](https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/blob/main/split_files/text_encoders/qwen_3_8b.safetensors)\n\n**loras**\n- [ph_f2k9b_localforestlab_v1.safetensors](https://huggingface.co/paulhax/flux2-klein-9b-localforestlab/resolve/main/ph_f2k9b_localforestlab_v1.safetensors)\n\n**vae**\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/blob/main/split_files/vae/flux2-vae.safetensors)\n\n**upscale_models**\n- [RealESRGAN_x2.pth](hhttps://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth)\n\n\nModel Storage Location\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 checkpoints/\n│   │      └── sam3.1_multiplex_fp16.safetensors\n│   ├── 📂 duffusion_models/\n│   │      └── flux-2-klein-9b.safetensors\n│   ├── 📂 text_encoders/\n│   │      └── qwen_3_8b.safetensors\n│   ├── 📂 loras/\n│   │      └── ph_f29kb_foliage_v1.safetensors\n│   ├── 📂 vae/\n│   │      └── flux2-vae.safetensors\n│   └── 📂 upscale_models/\n│   │      └── RealESRGAN_x2.pth\n```"
       ],
       "widgets_values_named": {
-        "text": "# PH's AIxArchviz FLUX2.k9b Series: IMAGE EDIT\n\n*A multipurpose workflow that lets you edit images without pixel degradation.*\n\nShowcase: [Youtube Video Walkthrough](https://youtu.be/6aXJqRhjXo0)\n___\n## Support, feedback, suggestions and improvements highly appreciated ❤️\n- comfycloud: [ComfyCloud](https://cloud.comfy.org/?via=ph01) (affiliate link, i may earn a commission)\n- Web: [paulhansen.de](https://www.paulhansen.de)\n- Instagram: [paulhansen.design](https://www.instagram.com/paulhansen.design/)\n- LinkedIn: [Paul Hansen](https://www.linkedin.com/in/ph3d)\n- Discord: [PH's AIxArchviz Discord](https://discord.gg/3UW5ZaWpWq)\n- Ko-Fi: [ko-fi/paulhansen](https://www.ko-fi.com/paulhansen)\n\n___\n## HOW TO USE THIS WORKFLOW\nMake sure all models used in this workflow are available on your device (including correct folder placement). Load any image in the LOAD IMAGE (image 1) node as a starting point for your edits, load any REFERENCE IMAGE (image 2) for using its content during editing. Refer to the images in your prompt, e.g. \"add the flamingo from image 2 to stand on the summer meadow in image 1 bright sunlight\". Either use an RGB IMAGE, the Mask Editor or a prompt in \"AUTOMASK BY PROMPT\" to create your mask for the editing. For smoother results increase SOFTEN MASK value. **Note that SEPARATE MASK COMPONENTS works best with values below 5 for the SOFTEN MASK feature.** Use Auto-enhance, -remove or -outpaint according to your needs.\n___\n### Custom Nodes (all available on comfycloud):\n\n- [ComfyUI-KJNodes by Kijai](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI_essentials by Matteo](https://github.com/cubiq/ComfyUI_essentials)\n- [masquerade nodes by BadCafeCode](https://github.com/BadCafeCode/masquerade-nodes-comfyui)\n- [LanPaint by scraed](https://github.com/scraed/LanPaint)\n- [Inpaint Crop & Stitch by lquesada](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch)\n\n*For installation, use the ComfyUI-Manager or find the terminal commands in the respective repository, e.g. `git clone https://github.com/kijai/ComfyUI-KJNodes` executed in `<YOUR_PATH_TO_COMFYUI>/ComfyUI/custom_nodes/`*\n\n### Model Downloads for Local Inference\n\n**checkpoints**\n- [sam3.1_multiplex_fp16.safetensors](https://huggingface.co/Comfy-Org/sam3.1/resolve/main/checkpoints/sam3.1_multiplex_fp16.safetensors)\n\n**diffusion_models**\n- [flux-2-klein-9b.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B/resolve/main/flux-2-klein-9b.safetensors) *(gated)*\n\n**text_encoders**\n- [qwen_3_8b_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors)\n\n**loras**\n- [ph_f2k9b_localforestlab_v1.safetensors](https://huggingface.co/paulhax/flux2-klein-9b-localforestlab/resolve/main/ph_f2k9b_localforestlab_v1.safetensors)\n  *PH's custom FLUX.2 [klein] 9B LoRA for detailed trees & foliage (cc-by-nc 4.0)*\n\n**vae**\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors)\n\n**upscale_models**\n- [RealESRGAN_x2.pth](https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth)\n\n*Models marked **gated** require you to log in and accept the license on the respective huggingface repository before downloading.*\n\nModel Storage Location\n```\n📂 ComfyUI/\n└── 📂 models/\n     ├── 📂 checkpoints/\n     │    └── sam3.1_multiplex_fp16.safetensors\n     ├── 📂 diffusion_models/\n     │    └── flux-2-klein-9b.safetensors\n     ├── 📂 text_encoders/\n     │    └── qwen_3_8b_fp8mixed.safetensors\n     ├── 📂 loras/\n     │    └── ph_f2k9b_localforestlab_v1.safetensors\n     ├── 📂 vae/\n     │    └── flux2-vae.safetensors\n     └── 📂 upscale_models/\n          └── RealESRGAN_x2.pth\n```"
+        "text": "# PH's AIxArchviz FLUX2.k9b Series: IMAGE EDIT\n\n*A multipurpose Workflow that lets you edit images without pixel degradation.*\n\nShowcase: \t[Youtube Video Walkthrough](https://youtu.be/6aXJqRhjXo0)\n___\n## Support, feedback, suggestions and improvements highly appreciated  ❤️\n- comfycloud: [ComfyCloud](https://cloud.comfy.org/?via=ph01) (affiliate link, i may earn a commission)\n- Web: [paulhansen.de](https://www.paulhansen.de)\n- Instagram: [paulhansen.design](https://www.instagram.com/paulhansen.design/)\n- LinkedIn: [Paul Hansen](https://www.linked.com/in/ph3d)\n- Discord: [PH's AIxArchviz Discord](https://discord.gg/3UW5ZaWpWq)\n- Ko-Fi: [ko-fi/paulhansen](https://www.ko-fi.com/paulhansen)\n\n___\n## HOW TO USE THIS WORKFLOW\nMake sure all models used in this workflow are available on your device (including correct folder placement). Load any image in the LOAD IMAGE (image 1) node as a starting point for your edits, load any REFERENCE IMAGE (image 2) for using its content during editing. Reffer to the images in your prompt, e.g. \"add the flamingo from image 2 to stand on the summer meadow in image 1 bright sunlight\". Either use an RGB IMAGE, Maske Editor or a Prompt in \"AUTOMASK BY PROMPT\" to create your mask for the editing. For smoother results increase SOFTEN MASK value. **Note that SEPERATE MASK COMPONENTS works best with values below 5 for SOFTEN MASK feature.** Use Auto-enhance, -remove or -outpaint according to your needs. \n___\n### Custom Nodes:\n\n- [ComfyUI-KJNodes by Kijai](https://github.com/kijai/ComfyUI-KJNodes)\n- [ComfyUI_essentials by Matteo](https://github.com/cubiq/ComfyUI_essentials)\n- [masquerade modes by BadCafeCode](https://github.com/BadCafeCode/masquerade-nodes-comfyui)\n- [LanPaint by scraed](https://github.com/scraed/LanPaint)\n- [Inpaint Crop & Stitch by lquesada](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch)\n\n*For installation, use the ComfyUI-Manager or find the terminal commands in the respective repository.*\n<br>\nEXAMPLE:\n`git clone https://github.com/scraed/LanPaint` executed in `<YOUR_PATH_TO_COMFYUI>/ComfyUI/custom_nodes/` \n\n### Model Downloads for Local Inference\n\n**checkpoints**\n- [sam3.1_multiplex_fp16.safetensors](https://huggingface.co/Comfy-Org/sam3.1/blob/main/checkpoints/sam3.1_multiplex_fp16.safetensors)\n\n**diffusion_models**\n- [flux-2-klein-9b.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B/blob/main/flux-2-klein-9b.safetensors) *NOTE: this is a **Gated** model, accept TOS on the huggingface repo to access!*\n\n**text_encoders**\n- [qwen_3_8b.safetensors](https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/blob/main/split_files/text_encoders/qwen_3_8b.safetensors)\n\n**loras**\n- [ph_f2k9b_localforestlab_v1.safetensors](https://huggingface.co/paulhax/flux2-klein-9b-localforestlab/resolve/main/ph_f2k9b_localforestlab_v1.safetensors)\n\n**vae**\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/blob/main/split_files/vae/flux2-vae.safetensors)\n\n**upscale_models**\n- [RealESRGAN_x2.pth](hhttps://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth)\n\n\nModel Storage Location\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 checkpoints/\n│   │      └── sam3.1_multiplex_fp16.safetensors\n│   ├── 📂 duffusion_models/\n│   │      └── flux-2-klein-9b.safetensors\n│   ├── 📂 text_encoders/\n│   │      └── qwen_3_8b.safetensors\n│   ├── 📂 loras/\n│   │      └── ph_f29kb_foliage_v1.safetensors\n│   ├── 📂 vae/\n│   │      └── flux2-vae.safetensors\n│   └── 📂 upscale_models/\n│   │      └── RealESRGAN_x2.pth\n```"
       },
       "color": "#222",
       "bgcolor": "#000"
@@ -851,7 +851,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 780,
-          "lastLinkId": 1467,
+          "lastLinkId": 1471,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2015,10 +2015,10 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              "flux2-vae.safetensors"
+              "full_encoder_small_decoder.safetensors"
             ],
             "widgets_values_named": {
-              "vae_name": "flux2-vae.safetensors"
+              "vae_name": "full_encoder_small_decoder.safetensors"
             }
           },
           {
@@ -2051,14 +2051,7 @@
               "cnr_id": "comfy-core",
               "ver": "0.8.2",
               "Node name for S&R": "UNETLoader",
-              "widget_ue_connectable": {},
-              "models": [
-                {
-                  "name": "flux-2-klein-9b.safetensors",
-                  "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-9B/resolve/main/flux-2-klein-9b.safetensors",
-                  "directory": "diffusion_models"
-                }
-              ]
+              "widget_ue_connectable": {}
             },
             "widgets_values": [
               "flux-2-klein-9b.safetensors",
@@ -2210,14 +2203,7 @@
               "cnr_id": "comfy-core",
               "ver": "0.8.2",
               "Node name for S&R": "CLIPLoader",
-              "widget_ue_connectable": {},
-              "models": [
-                {
-                  "name": "qwen_3_8b_fp8mixed.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
-                  "directory": "text_encoders"
-                }
-              ]
+              "widget_ue_connectable": {}
             },
             "widgets_values": [
               "qwen_3_8b_fp8mixed.safetensors",
@@ -3171,14 +3157,7 @@
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.24.0",
-              "Node name for S&R": "LoraLoaderModelOnly",
-              "models": [
-                {
-                  "name": "ph_f2k9b_localforestlab_v1.safetensors",
-                  "url": "https://huggingface.co/paulhax/flux2-klein-9b-localforestlab/resolve/main/ph_f2k9b_localforestlab_v1.safetensors",
-                  "directory": "loras"
-                }
-              ]
+              "Node name for S&R": "LoraLoaderModelOnly"
             },
             "widgets_values": [
               "ph_f2k9b_localforestlab_v1.safetensors",
@@ -4071,11 +4050,11 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              421910850232215,
+              939540751226401,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 421910850232215,
+              "noise_seed": 939540751226401,
               "control_after_generate": "randomize"
             }
           },
@@ -4897,14 +4876,7 @@
               "cnr_id": "comfy-core",
               "ver": "0.3.30",
               "Node name for S&R": "UpscaleModelLoader",
-              "widget_ue_connectable": {},
-              "models": [
-                {
-                  "name": "RealESRGAN_x2.pth",
-                  "url": "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x2.pth",
-                  "directory": "upscale_models"
-                }
-              ]
+              "widget_ue_connectable": {}
             },
             "widgets_values": [
               "RealESRGAN_x2.pth"
@@ -10869,10 +10841,10 @@
       "favorites": []
     },
     "ds": {
-      "scale": 0.7309209585078839,
+      "scale": 0.7951621067010288,
       "offset": [
-        2411.48337073868,
-        -3291.0404628534234
+        1362.702246127988,
+        -3473.1919832998033
       ]
     }
   },
