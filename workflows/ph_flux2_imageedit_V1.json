@@ -2,7 +2,7 @@
   "id": "eac58841-8a53-4819-a723-0ed2d27b6f6f",
   "revision": 0,
   "last_node_id": 780,
-  "last_link_id": 1471,
+  "last_link_id": 1473,
   "nodes": [
     {
       "id": 250,
@@ -349,7 +349,7 @@
       },
       "widgets_values": [
         "change the buildings black facade in image 1 to the pale copper material from reference image 2 and add subtle reflections of the environment to it",
-        855547306645682,
+        914408079900561,
         "phflg",
         "ph_f2k9b_localforestlab_v1.safetensors",
         true,
@@ -372,11 +372,11 @@
         true,
         5,
         false,
-        true
+        false
       ],
       "widgets_values_named": {
         "value": "change the buildings black facade in image 1 to the pale copper material from reference image 2 and add subtle reflections of the environment to it",
-        "seed": 855547306645682,
+        "seed": 914408079900561,
         "value_1": "phflg",
         "lora_name": "ph_f2k9b_localforestlab_v1.safetensors",
         "value_2": true,
@@ -399,7 +399,7 @@
         "switch_1": true,
         "value_14": 5,
         "switch_2": false,
-        "switch_3": true
+        "switch_3": false
       },
       "color": "#222",
       "bgcolor": "#000"
@@ -851,7 +851,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 780,
-          "lastLinkId": 1471,
+          "lastLinkId": 1473,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4050,11 +4050,11 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              939540751226401,
+              173485001763991,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 939540751226401,
+              "noise_seed": 173485001763991,
               "control_after_generate": "randomize"
             }
           },
@@ -7051,6 +7051,15 @@
                 "name": "input",
                 "type": "IMAGE,MASK",
                 "link": 1024
+              },
+              {
+                "localized_name": "longer_size",
+                "name": "resize_type.longer_size",
+                "type": "INT",
+                "widget": {
+                  "name": "resize_type.longer_size"
+                },
+                "link": 1473
               }
             ],
             "outputs": [
@@ -7144,6 +7153,15 @@
                 "name": "input",
                 "type": "IMAGE,MASK",
                 "link": 1028
+              },
+              {
+                "localized_name": "longer_size",
+                "name": "resize_type.longer_size",
+                "type": "INT",
+                "widget": {
+                  "name": "resize_type.longer_size"
+                },
+                "link": 1472
               }
             ],
             "outputs": [
@@ -7591,7 +7609,10 @@
                 "localized_name": "INT",
                 "name": "INT",
                 "type": "INT",
-                "links": []
+                "links": [
+                  1472,
+                  1473
+                ]
               },
               {
                 "localized_name": "BOOL",
@@ -10822,6 +10843,22 @@
             "target_id": 776,
             "target_slot": 2,
             "type": "INT"
+          },
+          {
+            "id": 1472,
+            "origin_id": 505,
+            "origin_slot": 1,
+            "target_id": 497,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1473,
+            "origin_id": 505,
+            "origin_slot": 1,
+            "target_id": 495,
+            "target_slot": 1,
+            "type": "INT"
           }
         ],
         "extra": {}
@@ -10841,10 +10878,10 @@
       "favorites": []
     },
     "ds": {
-      "scale": 0.7951621067010288,
+      "scale": 0.5431064180732386,
       "offset": [
-        1362.702246127988,
-        -3473.1919832998033
+        2983.8413600308104,
+        -2943.9485816625847
       ]
     }
   },
